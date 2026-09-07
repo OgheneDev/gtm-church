@@ -21,7 +21,7 @@ export default function Hero() {
             <span>Christ Apostolic Church &middot; Walsall, UK</span>
           </div>
 
-          <h1 className="mb-5 max-w-[12ch] text-center md:text-start text-[clamp(36px,5vw,56px)] font-semibold leading-[1.12] tracking-[-0.02em] text-(--ink) [font-family:var(--font-display)]">
+          <h1 className="mb-5 md:max-w-[12ch] text-center md:text-start text-[clamp(36px,5vw,56px)] font-semibold leading-[1.12] tracking-[-0.02em] text-(--ink) [font-family:var(--font-display)]">
             {site.tagline}
           </h1>
 
