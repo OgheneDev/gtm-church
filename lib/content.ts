@@ -23,9 +23,10 @@ export const site = {
   // Placeholder — confirm the real weekly service time before launch.
   serviceTime: "Sundays, 10:00am",
   nav: [
-    { label: "About", href: "/about" },
+    { label: "About Us", href: "/about-us" },
+    { label: "Announcements", href: "/announcements" },
     { label: "Ministries", href: "/ministries" },
-    { label: "Visit", href: "/visit" },
+    { label: "Visit Us", href: "/visit-us" },
     { label: "Media", href: "/media" },
   ],
 };

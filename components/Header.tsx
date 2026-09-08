@@ -61,7 +61,7 @@ export default function Header() {
               src={LOGO_URL}
               alt=""
               fill
-              sizes="48px"
+              sizes="65px"
               className="object-contain"
               priority
             />
