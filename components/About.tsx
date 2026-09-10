@@ -1,4 +1,7 @@
+// components/About.tsx
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { about } from "@/lib/content";
 
 export default function About() {
@@ -23,10 +26,9 @@ export default function About() {
             {about.heading}
           </h2>
 
-          <div className="space-y-4 md:space-y-5">
+          <div className="space-y-4 md:space-y-5 mb-7 md:mb-8">
             {about.paragraphs.map((p, index) => (
               <p
-                // Using index in case of duplicate string content, or fallback to the string itself
                 key={index}
                 className="text-[15px] sm:text-base leading-[1.75] text-(--text-muted)"
               >
@@ -34,6 +36,18 @@ export default function About() {
               </p>
             ))}
           </div>
+
+          <Link
+            href="/about-us"
+            className="group inline-flex w-fit items-center gap-2 text-sm font-medium text-(--ink) no-underline border-b border-(--gold) pb-0.5"
+          >
+            Learn More About Us
+            <ArrowRight
+              size={15}
+              className="transition-transform duration-150 group-hover:translate-x-0.5"
+              aria-hidden="true"
+            />
+          </Link>
         </div>
       </div>
     </section>

@@ -49,11 +49,11 @@ export const upcomingEvents = [
   },
 ];
 
+// lib/content.ts
 export const about = {
-  heading: "One big family",
+  heading: "Welcome to CAC Grace & Truth",
   paragraphs: [
-    "CAC Grace & Truth started as an apostolic centre to reach the continent of Europe with the message of the Supernatural.",
-    "We have four branches across the United Kingdom, each committed to helping members discover their purpose through the preaching of the Word.",
+    "We're a Christ Apostolic Church community that started as an apostolic centre reaching the continent of Europe with the message of the Supernatural. Our mission is simple: to make disciples and help every member discover their God-given purpose — and today that mission lives on across four branches throughout the United Kingdom.",
   ],
 };
 

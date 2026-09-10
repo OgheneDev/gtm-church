@@ -7,48 +7,38 @@ import {
   HiOutlineMail,
 } from "react-icons/hi";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const LOGO_URL =
   "https://res.cloudinary.com/dgc8cd67w/image/upload/v1788767437/outdor_pannel_qk6nti.avif";
 
 export function Give() {
   return (
-    <section className="w-full border-t border-(--line) bg-white/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-8 md:gap-12">
-          {/* Verse Text */}
-          <blockquote className="max-w-2xl">
-            <p className="font-(family-name:--font-display) italic text-lg md:text-xl lg:text-2xl text-(--ink) leading-relaxed mb-2 md:mb-0">
-              &ldquo;{giving.verse}&rdquo;
-              <span className="block sm:inline text-base md:text-lg text-(--text-muted) sm:ml-2 not-italic mt-2 sm:mt-0">
-                &mdash; {giving.reference}
-              </span>
-            </p>
-          </blockquote>
+    <section className="w-full bg-(--paper-band) border-y border-(--line)">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
+        <h2 className="font-(family-name:--font-display) font-medium text-3xl md:text-4xl tracking-tight text-(--ink) mb-5">
+          Partner With Us
+        </h2>
 
-          {/* Action Link */}
-          <div className="shrink-0">
-            <Link
-              href="/give"
-              className="inline-flex items-center text-sm md:text-base font-medium text-(--ink) border-b-2 border-(--gold) pb-1 whitespace-nowrap transition-all duration-200 hover:text-(--gold) hover:opacity-80"
-            >
-              Give now
-              <svg
-                className="w-4 h-4 ml-1.5 transition-transform duration-200 group-hover:translate-x-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </Link>
-          </div>
-        </div>
+        <p className="text-[15px] sm:text-base leading-[1.75] text-(--text-muted) mb-8 max-w-[34em] mx-auto">
+          Your generosity helps us continue the work of the ministry, support
+          our community and spread the Gospel.
+        </p>
+
+        <Link
+          href="/give"
+          className="inline-flex items-center justify-center gap-2.5 rounded-lg bg-(--ink) px-8 py-3.5 text-sm text-(--paper) no-underline shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all duration-150 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)]"
+        >
+          Give Today
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+
+        <p className="mt-9 font-(family-name:--font-display) italic text-[15px] text-(--text-muted)/80 leading-relaxed">
+          &ldquo;{giving.verse}&rdquo;
+          <span className="block not-italic text-[13px] mt-1.5">
+            &mdash; {giving.reference}
+          </span>
+        </p>
       </div>
     </section>
   );
