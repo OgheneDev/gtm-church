@@ -40,28 +40,31 @@ const schedule = [
 
 export default function WeeklySchedule() {
   return (
-    <section className="bg-[#F3ECDA] border-y border-[#1B2340]/10">
+    <section className="bg-(--paper-band) border-y border-(--line)">
       <div className="max-w-[1180px] mx-auto px-5 md:px-10 py-14">
-        <h2 className="font-semibold text-[#1B2340] text-2xl mb-8">
-          Weekly programme
+        <p className="text-[13px] font-medium text-(--gold) mb-3">Every Week</p>
+        <h2 className="font-semibold text-(--ink) text-2xl md:text-[28px] mb-8">
+          Weekly Programme
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {schedule.map((d) => (
-            <div key={d.day}>
-              <h3 className="font-semibold text-[#1B2340] text-base mb-2.5 pb-2 border-b border-[#1B2340]/15">
+            <div
+              key={d.day}
+              className="bg-(--paper) rounded-lg border border-(--line) p-5"
+            >
+              <h3 className="font-semibold text-(--ink) text-base mb-4 pb-3 border-b border-(--gold)/40">
                 {d.day}
               </h3>
-              <ul className="space-y-1.5">
+              <ul className="space-y-3.5">
                 {d.items.map((item, i) => (
-                  <li
-                    key={i}
-                    className="text-[14px] text-[#4A4A45] leading-snug"
-                  >
-                    {item.time && (
-                      <span className="text-[#8a7a52] mr-1.5">{item.time}</span>
-                    )}
-                    {item.label}
+                  <li key={i} className="flex flex-col gap-0.5">
+                    <span className="text-[14.5px] font-medium leading-snug text-(--ink)">
+                      {item.label}
+                    </span>
+                    <span className="text-[13px] text-(--text-muted)">
+                      {item.time || "Time to be confirmed"}
+                    </span>
                   </li>
                 ))}
               </ul>
