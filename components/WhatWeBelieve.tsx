@@ -16,7 +16,7 @@ export default function WhatWeBelieve() {
         </p>
 
         <Link
-          href="/about"
+          href="/about-us"
           className="group inline-flex items-center gap-2 text-sm font-medium text-(--ink) no-underline border-b border-(--gold) pb-0.5"
         >
           What We Believe
