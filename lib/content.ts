@@ -64,7 +64,7 @@ export const ministries = [
       "Handles graphics, TV outreach, film editing, and all electronic and print media for the church.",
     whoFor: "Anyone with skills or interest in media, design, or production.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_77d716bf33824d4fb4cddc0d4676e1f7~mv2.jpg",
+      "https://images.unsplash.com/photo-1675977586492-fec42f8d00af?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Choir Ministry",
@@ -72,7 +72,7 @@ export const ministries = [
       "Leads the congregation in praise and worship, ministering through music and song in every service.",
     whoFor: "Singers and musicians who want to serve through worship.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_fea8eb1c85844a19855c5f0c9a3e0a8c~mv2.jpg",
+      "https://images.unsplash.com/photo-1720186576697-24c1496a07e1?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Protocol",
@@ -80,7 +80,7 @@ export const ministries = [
       "Manages the church entrance and welcomes visiting ministers, VIPs, and guests, coordinating logistics for special programs.",
     whoFor: "Detail-oriented members comfortable hosting guests.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_661042ccbf614bbe9641684e25bdd00e~mv2.jpg",
+      "https://images.unsplash.com/photo-1663490364580-01dce2c9f87a?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Kid's Ministry",
@@ -88,7 +88,7 @@ export const ministries = [
       "Helps children grow in faith, understand God's Word, and discover their God-given gifts in a fun, Christ-centred environment.",
     whoFor: "Those with a heart for teaching and caring for children.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_ac9fbf3ec60d4085bba1d0f13316a868~mv2.jpg",
+      "https://images.unsplash.com/photo-1588075592405-d3d4f0846961?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Hospitality Ministry",
@@ -96,7 +96,7 @@ export const ministries = [
       "Gives worshippers a warm welcome at the door and cares for guests throughout the service.",
     whoFor: "Warm, welcoming members who enjoy making people feel at home.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_96328dd3bb6343aa8a4890dae5915bac~mv2.jpg",
+      "https://images.unsplash.com/photo-1609234656388-0ff363383899?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Ushering & Support",
@@ -104,7 +104,7 @@ export const ministries = [
       "Directs worshippers to their seats, helps meet practical needs during service, and helps maintain order.",
     whoFor: "Members who enjoy practical, hands-on serving during services.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_c5153d94fe62412a863d8d8664bb41a0~mv2.jpg",
+      "https://images.unsplash.com/photo-1787013940939-3187b3a51cc0?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Sanctuary Keeper",
@@ -112,14 +112,15 @@ export const ministries = [
       "Keeps the sanctuary, offices, and church grounds clean, orderly, and ready for every service.",
     whoFor: "Members who take pride in keeping shared spaces in order.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_f61051ad41b2425ebca392557d28a2de~mv2.jpg",
+      "https://images.unsplash.com/photo-1641422132928-0a1784310688?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Evangelism Team",
     description:
       "Shares the Gospel through preaching, hospital visits, prayer, outreach events, and follow-up on new converts.",
     whoFor: "Those passionate about sharing their faith beyond church walls.",
-    image: null, // Not found on the current site — ask the client for a photo.
+    image:
+      "https://images.unsplash.com/photo-1659635662323-86435126889d?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Follow Up",
@@ -127,14 +128,15 @@ export const ministries = [
       "Welcomes first-time visitors, keeps them informed and connected, and supports them in prayer and further counselling where needed.",
     whoFor: "Encouraging members who want to help newcomers feel at home.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_daa80943a442490d935cef2f24be7045~mv2.jpg",
+      "https://images.unsplash.com/photo-1717278087574-73fcc19377f4?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Security & Car Park Team",
     description:
       "Looks after the safety and security of members and guests, including car park coordination during services.",
     whoFor: "Members who take safety and order seriously.",
-    image: null, // Not found on the current site — ask the client for a photo.
+    image:
+      "https://images.unsplash.com/photo-1739032739979-8257de3c0e1e?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Crowd Control Unit",
@@ -142,13 +144,14 @@ export const ministries = [
       "Helps coordinate the safe movement of people during services and larger church programmes.",
     whoFor: "Calm, organised members comfortable directing groups.",
     image:
-      "https://static.wixstatic.com/media/77b1e2_d87a4ef800fe42b78c75ba6bf14b6b26~mv2.jpg",
+      "https://images.unsplash.com/photo-1745852738057-ccecd3baab33?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
   {
     name: "Publication Unit & Medical Team",
     description:
       "Handles church publications and public communications, and provides first aid care during services.",
     whoFor: "Writers/communicators, and anyone with first aid experience.",
-    image: null, // Not found on the current site — ask the client for a photo.
+    image:
+      "https://images.unsplash.com/photo-1631478650929-5704a12152ce?fm=jpg&q=80&w=1200&auto=format&fit=crop",
   },
 ];

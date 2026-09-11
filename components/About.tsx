@@ -1,15 +1,65 @@
-// components/About.tsx
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { about } from "@/lib/content";
 
 export default function About() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2, rootMargin: "0px 0px -60px 0px" },
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24">
+    <section
+      ref={sectionRef}
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24"
+    >
+      <style>{`
+        @keyframes about-img-in {
+          from { opacity: 0; transform: translateX(-24px) scale(0.98); }
+          to { opacity: 1; transform: translateX(0) scale(1); }
+        }
+        @keyframes about-text-in {
+          from { opacity: 0; transform: translateX(24px); }
+          to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes about-item-in {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          * { animation: none !important; }
+        }
+      `}</style>
+
       <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-14 lg:gap-16 items-center">
         {/* Image Container */}
-        <div className="relative w-full aspect-4/3 rounded-lg md:rounded-xl overflow-hidden bg-[#eae6da] shadow-sm">
+        <div
+          className={`relative w-full aspect-4/3 rounded-lg md:rounded-xl overflow-hidden bg-[#eae6da] shadow-sm ${
+            inView
+              ? "opacity-0 animate-[about-img-in_0.7s_ease-out_forwards]"
+              : "opacity-0"
+          } motion-reduce:opacity-100 motion-reduce:animate-none`}
+        >
           {/* Replace with a real photo of the congregation or building. */}
           <Image
             src="https://static.wixstatic.com/media/77b1e2_7c59786db27c4af89ae79b88f40ffb99~mv2.jpg"
@@ -22,7 +72,13 @@ export default function About() {
 
         {/* Text Content */}
         <div className="flex flex-col justify-center">
-          <h2 className="font-(family-name:--font-display) font-medium text-3xl md:text-4xl lg:text-[2.5rem] tracking-tight text-(--ink) mb-5 md:mb-6">
+          <h2
+            className={`font-(family-name:--font-display) font-medium text-3xl md:text-4xl lg:text-[2.5rem] tracking-tight text-(--ink) mb-5 md:mb-6 ${
+              inView
+                ? "opacity-0 animate-[about-text-in_0.6s_ease-out_0.1s_forwards]"
+                : "opacity-0"
+            } motion-reduce:opacity-100 motion-reduce:animate-none`}
+          >
             {about.heading}
           </h2>
 
@@ -30,24 +86,48 @@ export default function About() {
             {about.paragraphs.map((p, index) => (
               <p
                 key={index}
-                className="text-[15px] sm:text-base leading-[1.75] text-(--text-muted)"
+                style={
+                  inView
+                    ? { animationDelay: `${0.22 + index * 0.1}s` }
+                    : undefined
+                }
+                className={`text-[15px] sm:text-base leading-[1.75] text-(--text-muted) ${
+                  inView
+                    ? "opacity-0 animate-[about-item-in_0.5s_ease-out_forwards]"
+                    : "opacity-0"
+                } motion-reduce:opacity-100 motion-reduce:animate-none`}
               >
                 {p}
               </p>
             ))}
           </div>
 
-          <Link
-            href="/about-us"
-            className="group inline-flex w-fit items-center gap-2 text-sm font-medium text-(--ink) no-underline border-b border-(--gold) pb-0.5"
+          <div
+            style={
+              inView
+                ? {
+                    animationDelay: `${0.22 + about.paragraphs.length * 0.1 + 0.1}s`,
+                  }
+                : undefined
+            }
+            className={`w-fit ${
+              inView
+                ? "opacity-0 animate-[about-item-in_0.5s_ease-out_forwards]"
+                : "opacity-0"
+            } motion-reduce:opacity-100 motion-reduce:animate-none`}
           >
-            Learn More About Us
-            <ArrowRight
-              size={15}
-              className="transition-transform duration-150 group-hover:translate-x-0.5"
-              aria-hidden="true"
-            />
-          </Link>
+            <Link
+              href="/about-us"
+              className="group inline-flex w-fit items-center gap-2 text-sm font-medium text-(--ink) no-underline border-b border-(--gold) pb-0.5"
+            >
+              Learn More About Us
+              <ArrowRight
+                size={15}
+                className="transition-transform duration-150 group-hover:translate-x-0.5"
+                aria-hidden="true"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
