@@ -47,7 +47,7 @@ export default function WhatWeBelieve() {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
         <h2
-          className={`font-(family-name:--font-display) font-semibold text-3xl md:text-4xl tracking-tight text-(--ink) mb-5 ${
+          className={`font-semibold text-3xl md:text-4xl tracking-tight text-(--ink) mb-5 ${
             inView
               ? "opacity-0 animate-[wwb-in_0.6s_ease-out_forwards]"
               : "opacity-0"
@@ -57,7 +57,7 @@ export default function WhatWeBelieve() {
         </h2>
 
         <p
-          className={`text-[15px] sm:text-base leading-[1.75] text-(--text-muted) mb-8 max-w-[36em] mx-auto ${
+          className={`text-sm leading-[1.75] text-(--text-muted) mb-8 max-w-[36em] mx-auto ${
             inView
               ? "opacity-0 animate-[wwb-in_0.6s_ease-out_0.12s_forwards]"
               : "opacity-0"

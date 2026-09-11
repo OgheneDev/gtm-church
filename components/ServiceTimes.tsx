@@ -78,7 +78,7 @@ export default function ServiceTimes() {
             />
             Join Us This Week
           </p>
-          <h2 className="text-4xl font-semibold tracking-tight text-(--paper) md:text-5xl [font-family:var(--font-display)]">
+          <h2 className="text-3xl font-semibold tracking-tight text-(--paper) md:text-4xl">
             Service Times &amp; Locations
           </h2>
         </div>
@@ -93,7 +93,7 @@ export default function ServiceTimes() {
                 : "opacity-0"
             } motion-reduce:opacity-100 motion-reduce:animate-none`}
           >
-            <h3 className="mb-7 text-xl font-medium text-(--paper) [font-family:var(--font-display)]">
+            <h3 className="mb-7 text-lg font-medium text-(--paper)">
               Sunday Worship
             </h3>
 
@@ -184,7 +184,7 @@ export default function ServiceTimes() {
                 : "opacity-0"
             } motion-reduce:opacity-100 motion-reduce:animate-none`}
           >
-            <h3 className="mb-7 text-xl font-medium text-(--paper) [font-family:var(--font-display)]">
+            <h3 className="mb-7 text-lg font-medium text-(--paper)">
               Midweek Prayer
             </h3>
 

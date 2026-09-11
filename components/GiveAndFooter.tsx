@@ -16,18 +16,18 @@ export function Give() {
   return (
     <section className="w-full bg-(--paper-band) border-y border-(--line)">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
-        <h2 className="font-(family-name:--font-display) font-semibold text-3xl md:text-4xl tracking-tight text-(--ink) mb-5">
+        <h2 className="font-semibold text-3xl md:text-4xl tracking-tight text-(--ink) mb-5">
           Partner With Us
         </h2>
 
-        <p className="text-[15px] sm:text-base leading-[1.75] text-(--text-muted) mb-8 max-w-[34em] mx-auto">
+        <p className="text-sm leading-[1.75] text-(--text-muted) mb-8 max-w-[34em] mx-auto">
           Your generosity helps us continue the work of the ministry, support
           our community and spread the Gospel.
         </p>
 
         <Link
           href="/donate"
-          className="inline-flex items-center justify-center gap-2.5 rounded-lg bg-(--ink) px-8 py-3.5 text-sm text-(--paper) no-underline shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all duration-150 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)]"
+          className="inline-flex items-center justify-center gap-2.5 rounded-sm bg-(--ink) px-8 py-3.5 text-sm text-(--paper) no-underline shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all duration-150 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)]"
         >
           Give Today
           <ArrowRight size={16} aria-hidden="true" />

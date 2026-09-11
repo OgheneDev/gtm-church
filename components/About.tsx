@@ -31,7 +31,7 @@ export default function About() {
   return (
     <section
       ref={sectionRef}
-      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-21 py-16 md:py-20 lg:py-24"
     >
       <style>{`
         @keyframes about-img-in {
@@ -73,7 +73,7 @@ export default function About() {
         {/* Text Content */}
         <div className="flex flex-col justify-center">
           <h1
-            className={`font-(family-name:--font-display) text-center md:text-start font-semibold text-3xl md:text-4xl lg:text-[2.5rem] tracking-tight text-(--ink) mb-5 md:mb-6 ${
+            className={` text-center md:text-start font-semibold text-3xl md:text-4xl lg:text-[2.5rem] tracking-tight text-(--ink) mb-5 md:mb-6 ${
               inView
                 ? "opacity-0 animate-[about-text-in_0.6s_ease-out_0.1s_forwards]"
                 : "opacity-0"
@@ -91,7 +91,7 @@ export default function About() {
                     ? { animationDelay: `${0.22 + index * 0.1}s` }
                     : undefined
                 }
-                className={`md:text-[15px] text-sm text-center md:text-start leading-[1.75] text-(--text-muted) ${
+                className={`text-sm text-center md:text-start leading-[1.75] text-(--text-muted) ${
                   inView
                     ? "opacity-0 animate-[about-item-in_0.5s_ease-out_forwards]"
                     : "opacity-0"

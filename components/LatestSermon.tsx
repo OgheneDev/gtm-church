@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-// Placeholder — swap for the real latest sermon before this goes live.
 const latestSermon = {
   speaker: "Pastor's Full Name",
   title: "Sermon Title Goes Here",
@@ -37,7 +36,7 @@ export default function LatestSermon() {
   return (
     <section
       ref={sectionRef}
-      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-21 py-16 md:py-20 lg:py-24"
     >
       <style>{`
         @keyframes ls-header-in {
@@ -62,7 +61,7 @@ export default function LatestSermon() {
       `}</style>
 
       <h2
-        className={`font-(family-name:--font-display) text-center md:text-start font-semibold text-3xl md:text-4xl tracking-tight text-(--ink) mb-10 md:mb-12 ${
+        className={`text-center md:text-start font-semibold text-3xl md:text-4xl tracking-tight text-(--ink) mb-10 md:mb-12 ${
           inView
             ? "opacity-0 animate-[ls-header-in_0.6s_ease-out_forwards]"
             : "opacity-0"
@@ -102,7 +101,7 @@ export default function LatestSermon() {
           </span>
 
           <h3
-            className={`font-(family-name:--font-display) font-medium text-2xl md:text-[1.75rem] text-(--ink) mb-3 leading-snug ${
+            className={`font-semibold text-2xl md:text-[1.75rem] text-(--ink) mb-3 leading-snug ${
               inView
                 ? "opacity-0 animate-[ls-detail-in_0.55s_ease-out_0.3s_forwards]"
                 : "opacity-0"
@@ -139,7 +138,7 @@ export default function LatestSermon() {
           >
             <Link
               href="/media"
-              className="inline-flex items-center justify-center gap-2.5 rounded-lg bg-(--ink) px-7 py-3.5 text-sm text-(--paper) no-underline transition-opacity duration-150 hover:opacity-90"
+              className="inline-flex items-center justify-center gap-2.5 rounded-sm bg-(--ink) px-7 py-3.5 text-sm text-(--paper) no-underline transition-opacity duration-150 hover:opacity-90"
             >
               Watch Sermon
             </Link>

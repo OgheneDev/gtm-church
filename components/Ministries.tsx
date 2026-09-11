@@ -46,7 +46,7 @@ export default function Ministries() {
   return (
     <section
       ref={sectionRef}
-      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-21 py-16 md:py-20 lg:py-24"
     >
       <style>{`
         @keyframes min-header-in {
@@ -73,10 +73,10 @@ export default function Ministries() {
             : "opacity-0"
         } motion-reduce:opacity-100 motion-reduce:animate-none`}
       >
-        <h2 className="font-(family-name:--font-display) text-center md:text-start font-semibold text-3xl md:text-4xl tracking-tight text-(--ink)">
+        <h2 className="text-center md:text-start font-semibold text-3xl md:text-4xl tracking-tight text-(--ink)">
           Ministries
         </h2>
-        <p className="text-[15px] text-(--text-muted) text-center md:text-start sm:max-w-xs sm:text-right">
+        <p className="text-sm text-(--text-muted) text-center md:text-start sm:max-w-xs sm:text-right">
           A place to belong and grow, whatever stage of life you're in.
         </p>
       </div>

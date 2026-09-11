@@ -4,7 +4,7 @@ export default function AboutHero() {
       <p className="text-[13px] font-medium text-center md:text-start text-(--gold) mb-4">
         About Us
       </p>
-      <h1 className="font-semibold text-(--ink) text-center md:text-start text-[32px] md:text-[44px] leading-tight mb-7 max-w-[12em]">
+      <h1 className="font-semibold text-(--ink) font-(family-name:--font-display) text-center md:text-start text-[32px] md:text-[44px] leading-tight mb-7 max-w-[12em]">
         About CAC Grace &amp; Truth
       </h1>
       <p className="text-sm md:text-lg leading-relaxed text-center md:text-start text-(--text-muted) max-w-[36em]">

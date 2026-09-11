@@ -215,7 +215,7 @@ export default function Header() {
                   ? { animationDelay: `${80 + site.nav.length * 50}ms` }
                   : undefined
               }
-              className={`mt-5 w-full rounded-md bg-(--ink) px-5 py-2.5 text-center text-sm font-medium text-white no-underline transition-opacity duration-150 hover:opacity-90 ${
+              className={`mt-5 w-full rounded-sm bg-(--ink) px-5 py-2.5 text-center text-sm font-medium text-white no-underline transition-opacity duration-150 hover:opacity-90 ${
                 open
                   ? "opacity-0 animate-[mobile-item-in_0.35s_ease-out_forwards]"
                   : ""
