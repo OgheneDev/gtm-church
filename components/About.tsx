@@ -72,15 +72,15 @@ export default function About() {
 
         {/* Text Content */}
         <div className="flex flex-col justify-center">
-          <h2
-            className={`font-(family-name:--font-display) font-medium text-3xl md:text-4xl lg:text-[2.5rem] tracking-tight text-(--ink) mb-5 md:mb-6 ${
+          <h1
+            className={`font-(family-name:--font-display) text-center md:text-start font-semibold text-3xl md:text-4xl lg:text-[2.5rem] tracking-tight text-(--ink) mb-5 md:mb-6 ${
               inView
                 ? "opacity-0 animate-[about-text-in_0.6s_ease-out_0.1s_forwards]"
                 : "opacity-0"
             } motion-reduce:opacity-100 motion-reduce:animate-none`}
           >
             {about.heading}
-          </h2>
+          </h1>
 
           <div className="space-y-4 md:space-y-5 mb-7 md:mb-8">
             {about.paragraphs.map((p, index) => (
@@ -91,7 +91,7 @@ export default function About() {
                     ? { animationDelay: `${0.22 + index * 0.1}s` }
                     : undefined
                 }
-                className={`text-[15px] sm:text-base leading-[1.75] text-(--text-muted) ${
+                className={`md:text-[15px] text-sm text-center md:text-start leading-[1.75] text-(--text-muted) ${
                   inView
                     ? "opacity-0 animate-[about-item-in_0.5s_ease-out_forwards]"
                     : "opacity-0"
@@ -110,7 +110,7 @@ export default function About() {
                   }
                 : undefined
             }
-            className={`w-fit ${
+            className={`w-fit mx-auto md:mx-0 ${
               inView
                 ? "opacity-0 animate-[about-item-in_0.5s_ease-out_forwards]"
                 : "opacity-0"

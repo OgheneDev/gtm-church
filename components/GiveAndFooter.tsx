@@ -16,7 +16,7 @@ export function Give() {
   return (
     <section className="w-full bg-(--paper-band) border-y border-(--line)">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
-        <h2 className="font-(family-name:--font-display) font-medium text-3xl md:text-4xl tracking-tight text-(--ink) mb-5">
+        <h2 className="font-(family-name:--font-display) font-semibold text-3xl md:text-4xl tracking-tight text-(--ink) mb-5">
           Partner With Us
         </h2>
 
@@ -133,7 +133,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/events"
-                  className="hover:text-[var(--gold)] transition-colors"
+                  className="hover:text-(--gold) transition-colors"
                 >
                   Upcoming Events
                 </Link>
@@ -141,7 +141,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/sermons"
-                  className="hover:text-[var(--gold)] transition-colors"
+                  className="hover:text-(--gold) transition-colors"
                 >
                   Sermons & Media
                 </Link>
@@ -149,7 +149,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/give"
-                  className="hover:text-[var(--gold)] transition-colors"
+                  className="hover:text-(--gold) transition-colors"
                 >
                   Give / Tithing
                 </Link>
@@ -159,12 +159,12 @@ export function Footer() {
 
           {/* Column 3: Contact Info */}
           <div className="flex flex-col space-y-4 md:col-span-1">
-            <h4 className="text-xs font-semibold tracking-widest uppercase text-[var(--gold)]">
+            <h4 className="text-xs font-semibold tracking-widest uppercase text-(--gold)">
               Find & Contact Us
             </h4>
-            <ul className="space-y-3.5 text-xs sm:text-sm text-[var(--paper-band)]/80">
+            <ul className="space-y-3.5 text-xs sm:text-sm text-(--paper-band)/80">
               <li className="flex items-start space-x-3">
-                <HiOutlineLocationMarker className="w-5 h-5 text-[var(--gold)] shrink-0 mt-0.5" />
+                <HiOutlineLocationMarker className="w-5 h-5 text-(--gold) shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
                   {site.address.line1}, {site.address.line2}
                 </span>

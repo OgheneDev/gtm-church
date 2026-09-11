@@ -78,7 +78,7 @@ export default function ServiceTimes() {
             />
             Join Us This Week
           </p>
-          <h2 className="text-3xl font-semibold tracking-tight text-(--paper) md:text-4xl [font-family:var(--font-display)]">
+          <h2 className="text-4xl font-semibold tracking-tight text-(--paper) md:text-5xl [font-family:var(--font-display)]">
             Service Times &amp; Locations
           </h2>
         </div>
@@ -164,7 +164,7 @@ export default function ServiceTimes() {
                 href="https://maps.google.com/?q=75+Stafford+Street,+Walsall,+WS2+8DU"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-(--gold)/10 px-5 py-2.5 text-sm font-medium text-(--gold) transition-colors hover:bg-(--gold)/15 md:w-auto"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-sm bg-(--gold)/10 px-5 py-2.5 text-sm font-medium text-(--gold) transition-colors hover:bg-(--gold)/15 md:w-auto"
               >
                 Get Directions
                 <ExternalLink
@@ -229,14 +229,16 @@ export default function ServiceTimes() {
                       : "opacity-0"
                   } motion-reduce:opacity-100 motion-reduce:animate-none`}
                 >
-                  <Video size={16} aria-hidden="true" />
+                  <MapPin size={16} aria-hidden="true" />
                 </div>
                 <div>
                   <p className="mb-0.5 text-xs uppercase tracking-wide text-(--paper)/45">
                     Location
                   </p>
                   <p className="m-0 text-base text-(--paper)/90">
-                    Online via Zoom
+                    75 Stafford Street
+                    <br />
+                    Walsall, WS2 8DU
                   </p>
                 </div>
               </div>
@@ -250,10 +252,12 @@ export default function ServiceTimes() {
               } motion-reduce:opacity-100 motion-reduce:animate-none`}
             >
               <Link
-                href="#"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-white/5 px-5 py-2.5 text-sm font-medium text-(--paper)/90 transition-colors hover:bg-white/10 md:w-auto"
+                href="https://maps.google.com/?q=75+Stafford+Street,+Walsall,+WS2+8DU"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-sm bg-(--gold)/10 px-5 py-2.5 text-sm font-medium text-(--gold) transition-colors hover:bg-(--gold)/15 md:w-auto"
               >
-                Join Meeting
+                Get Directions
                 <ExternalLink
                   size={14}
                   aria-hidden="true"

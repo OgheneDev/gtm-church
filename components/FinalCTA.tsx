@@ -10,7 +10,7 @@ export default function FinalCta() {
       />
 
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="font-(family-name:--font-display) font-medium text-3xl md:text-[2.75rem] tracking-tight text-(--ink) mb-6 leading-[1.15]">
+        <h2 className="font-(family-name:--font-display) font-semibold text-3xl md:text-[2.75rem] tracking-tight text-(--ink) mb-6 leading-[1.15]">
           There&apos;s a place for you here.
         </h2>
 

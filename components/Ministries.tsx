@@ -73,10 +73,10 @@ export default function Ministries() {
             : "opacity-0"
         } motion-reduce:opacity-100 motion-reduce:animate-none`}
       >
-        <h2 className="font-(family-name:--font-display) font-medium text-3xl md:text-4xl tracking-tight text-(--ink)">
+        <h2 className="font-(family-name:--font-display) text-center md:text-start font-semibold text-3xl md:text-4xl tracking-tight text-(--ink)">
           Ministries
         </h2>
-        <p className="text-[15px] text-(--text-muted) sm:max-w-xs sm:text-right">
+        <p className="text-[15px] text-(--text-muted) text-center md:text-start sm:max-w-xs sm:text-right">
           A place to belong and grow, whatever stage of life you're in.
         </p>
       </div>
@@ -104,10 +104,12 @@ export default function Ministries() {
                 inView ? "animate-[min-border-grow_0.5s_ease-out_forwards]" : ""
               } motion-reduce:scale-x-100 motion-reduce:animate-none`}
             />
-            <div className="mb-2 flex items-baseline gap-2.5">
-              <h3 className="text-lg font-semibold text-(--ink)">{m.name}</h3>
+            <div className="mb-2 flex items-baseline justify-center md:justify-start gap-2.5">
+              <h3 className="text-lg font-semibold text-(--ink) text-center md:text-start">
+                {m.name}
+              </h3>
             </div>
-            <p className="text-[15px] leading-relaxed text-(--text-muted)">
+            <p className="text-[15px] leading-relaxed text-(--text-muted) text-center md:text-start">
               {m.description}
             </p>
           </div>
@@ -120,7 +122,7 @@ export default function Ministries() {
             ? { animationDelay: `${0.12 + ministries.length * 0.08 + 0.1}s` }
             : undefined
         }
-        className={`w-fit ${
+        className={`w-fit mx-auto md:mx-0 ${
           inView
             ? "opacity-0 animate-[min-header-in_0.5s_ease-out_forwards]"
             : "opacity-0"

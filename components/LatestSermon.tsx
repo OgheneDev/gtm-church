@@ -62,7 +62,7 @@ export default function LatestSermon() {
       `}</style>
 
       <h2
-        className={`font-(family-name:--font-display) font-medium text-3xl md:text-4xl tracking-tight text-(--ink) mb-10 md:mb-12 ${
+        className={`font-(family-name:--font-display) text-center md:text-start font-semibold text-3xl md:text-4xl tracking-tight text-(--ink) mb-10 md:mb-12 ${
           inView
             ? "opacity-0 animate-[ls-header-in_0.6s_ease-out_forwards]"
             : "opacity-0"
