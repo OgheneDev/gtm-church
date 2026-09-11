@@ -41,9 +41,11 @@ const schedule = [
 export default function WeeklySchedule() {
   return (
     <section className="bg-(--paper-band) border-y border-(--line)">
-      <div className="max-w-[1180px] mx-auto px-5 md:px-10 py-14">
-        <p className="text-[13px] font-medium text-(--gold) mb-3">Every Week</p>
-        <h2 className="font-semibold text-(--ink) text-2xl md:text-[28px] mb-8">
+      <div className="max-w-295 mx-auto px-5 md:px-10 py-14">
+        <p className="text-[13px] font-medium text-(--gold) mb-3 text-center md:text-start">
+          Every Week
+        </p>
+        <h2 className="font-semibold text-center md:text-start text-(--ink) text-2xl md:text-[28px] mb-8">
           Weekly Programme
         </h2>
 

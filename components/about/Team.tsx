@@ -42,9 +42,11 @@ const team = [
 export default function Team() {
   return (
     <section className="max-w-295 mx-auto px-5 md:px-10 py-16">
-      <h2 className="font-semibold text-[#1B2340] text-2xl mb-8">Leadership</h2>
+      <h2 className="font-semibold text-[#1B2340] text-2xl mb-8 text-center md:text-start">
+        Leadership
+      </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         {team.map((person) => (
           <div key={person.name}>
             <div className="relative aspect-square mb-3.5 overflow-hidden rounded bg-[#EAE6DA]">

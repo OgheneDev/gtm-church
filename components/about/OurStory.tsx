@@ -7,15 +7,15 @@ const paragraphs = [
 export default function OurStory() {
   return (
     <section className="bg-(--paper-band) border-y border-(--line)">
-      <div className="max-w-[1180px] mx-auto px-5 md:px-10 py-14 md:py-16">
-        <h2 className="font-semibold text-(--ink) text-2xl md:text-[28px] mb-6">
+      <div className="max-w-295 mx-auto px-5 md:px-10 py-14 md:py-16">
+        <h2 className="font-semibold text-(--ink) text-center md:text-start text-2xl md:text-[28px] mb-6">
           Our Story
         </h2>
         <div className="max-w-[42em] space-y-3.5">
           {paragraphs.map((p) => (
             <p
               key={p}
-              className="text-base leading-relaxed text-(--text-muted)"
+              className="text-center md:text-start text-sm md:text-base leading-relaxed text-(--text-muted)"
             >
               {p}
             </p>

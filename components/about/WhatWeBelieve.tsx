@@ -1,12 +1,14 @@
 export default function WhatWeBelieve() {
   return (
     <section className="bg-(--ink) py-14 md:py-16">
-      <div className="max-w-[1180px] mx-auto px-5 md:px-10">
-        <p className="text-[13px] font-medium text-(--gold) mb-3">Foundation</p>
-        <h2 className="font-semibold text-(--paper) text-2xl md:text-[28px] mb-4">
+      <div className="max-w-295 mx-auto px-5 md:px-10">
+        <p className="text-[13px] font-medium text-center md:text-start text-(--gold) mb-3">
+          Foundation
+        </p>
+        <h2 className="font-semibold text-(--paper) text-center md:text-start text-2xl md:text-[28px] mb-4">
           What We Believe
         </h2>
-        <p className="text-base leading-relaxed text-(--paper)/70 max-w-[42em] mb-6">
+        <p className="text-base leading-relaxed text-center md:text-start text-(--paper)/70 max-w-[42em] mb-6">
           We hold to the core beliefs of the Christ Apostolic Church — the
           authority of Scripture, salvation through Christ, and the present-day
           work of the Holy Spirit.
@@ -19,12 +21,6 @@ export default function WhatWeBelieve() {
               +
             </span>
           </summary>
-          {/*
-            NOTE: the live site's "Statement of Faith" and "Our Tenets"
-            sections currently have no body text at all — this is
-            placeholder copy only. Replace with the church's actual,
-            approved statement before publishing.
-          */}
           <div className="pb-6 text-[15px] leading-relaxed text-(--paper)/70 space-y-3">
             <p>
               We believe in the divine inspiration and authority of the Holy

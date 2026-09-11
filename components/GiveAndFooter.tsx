@@ -26,7 +26,7 @@ export function Give() {
         </p>
 
         <Link
-          href="/give"
+          href="/donate"
           className="inline-flex items-center justify-center gap-2.5 rounded-lg bg-(--ink) px-8 py-3.5 text-sm text-(--paper) no-underline shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all duration-150 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)]"
         >
           Give Today
@@ -100,7 +100,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-(--paper-band) hover:bg-(--gold) hover:text-[var(--ink)] transition-all duration-200"
+                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-(--paper-band) hover:bg-(--gold) hover:text-(--ink) transition-all duration-200"
               >
                 <FaYoutube className="w-4 h-4" />
               </a>
@@ -109,7 +109,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-[var(--paper-band)] hover:bg-[var(--gold)] hover:text-[var(--ink)] transition-all duration-200"
+                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-(--paper-band) hover:bg-(--gold) hover:text-(--ink) transition-all duration-200"
               >
                 <FaTwitter className="w-4 h-4" />
               </a>
@@ -118,14 +118,14 @@ export function Footer() {
 
           {/* Column 2: Navigation Links */}
           <div className="flex flex-col space-y-4">
-            <h4 className="text-xs font-semibold tracking-widest uppercase text-[var(--gold)]">
+            <h4 className="text-xs font-semibold tracking-widest uppercase text-(--gold)">
               Quick Links
             </h4>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-[var(--paper-band)]/80">
+            <ul className="space-y-2.5 text-xs sm:text-sm text-(--paper-band)/80">
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-[var(--gold)] transition-colors"
+                  className="hover:text-(--gold) transition-colors"
                 >
                   About Us
                 </Link>
@@ -182,7 +182,7 @@ export function Footer() {
                 <HiOutlineMail className="w-5 h-5 text-[var(--gold)] shrink-0" />
                 <a
                   href={`mailto:${site.email || "info@gtmbirmingham.com"}`}
-                  className="hover:text-[var(--gold)] transition-colors"
+                  className="hover:text-(--gold) transition-colors"
                 >
                   {site.email || "info@gtmbirmingham.com"}
                 </a>
@@ -215,7 +215,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar: Copyright & Legal */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[var(--paper-band)]/60 text-center sm:text-left">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-(--paper-band)/60 text-center sm:text-left">
           <p>
             &copy; {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>

@@ -1,9 +1,11 @@
 export default function LocationMap() {
   return (
     <section className="bg-(--paper-band) border-y border-(--line)">
-      <div className="max-w-[1180px] mx-auto px-5 md:px-10 py-16">
-        <p className="text-[13px] font-medium text-(--gold) mb-3">Find Us</p>
-        <h2 className="font-semibold text-(--ink) text-2xl md:text-[28px] mb-8">
+      <div className="max-w-295 mx-auto px-5 md:px-10 py-16">
+        <p className="text-[13px] font-medium text-(--gold) mb-3 text-center md:text-start">
+          Find Us
+        </p>
+        <h2 className="font-semibold text-(--ink) text-2xl md:text-[28px] mb-8 text-center md:text-start">
           Our Zonal Headquarters
         </h2>
 

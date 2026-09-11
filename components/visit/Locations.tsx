@@ -39,12 +39,14 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section className="max-w-[1180px] mx-auto px-5 md:px-10 py-16">
-      <p className="text-[13px] font-medium text-(--gold) mb-3">Visit Us</p>
-      <h2 className="font-semibold text-(--ink) text-2xl md:text-[28px] mb-2">
+    <section className="max-w-295 mx-auto px-5 md:px-10 py-16">
+      <p className="text-[13px] font-medium text-(--gold) mb-3 text-center md:text-start">
+        Visit Us
+      </p>
+      <h2 className="font-semibold text-(--ink) text-center md:text-start text-2xl md:text-[28px] mb-2">
         Our Locations
       </h2>
-      <p className="text-[15px] text-(--text-muted) mb-10 max-w-[42em]">
+      <p className="text-[15px] text-center md:text-start text-(--text-muted) mb-10 max-w-[42em]">
         One ministry, three locations across the West Midlands — Walsall is our
         zonal headquarters.
       </p>
@@ -71,7 +73,7 @@ export default function Locations() {
                 {loc.name}
               </h3>
 
-              <div className="flex flex-grow flex-col gap-3.5">
+              <div className="flex grow flex-col gap-3.5">
                 <div className="flex items-start gap-2.5">
                   <MapPin
                     size={16}

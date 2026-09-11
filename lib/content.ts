@@ -1,6 +1,3 @@
-// All copy lives here so the client can update it without touching layout code.
-// Replace the placeholder items (marked below) with real, current details.
-
 export const site = {
   name: "CAC Grace & Truth",
   fullName: "Christ Apostolic Church, Grace and Truth",
@@ -20,11 +17,11 @@ export const site = {
     youtube: "https://youtube.com/@cacgracetruth",
     twitter: "https://twitter.com/cacgracetruth",
   },
-  // Placeholder — confirm the real weekly service time before launch.
+
   serviceTime: "Sundays, 10:00am",
   nav: [
     { label: "About Us", href: "/about-us" },
-    { label: "Announcements", href: "/announcements" },
+    { label: "Events", href: "/events" },
     { label: "Ministries", href: "/ministries" },
     { label: "Visit Us", href: "/visit-us" },
     { label: "Media", href: "/media" },
@@ -33,13 +30,11 @@ export const site = {
 
 export const monthlyTheme = {
   label: "This month",
-  // Placeholder — swap for the current month's theme.
   title: "An encounter with power",
 };
 
 export const upcomingEvents = [
   {
-    // Placeholder dates — update each month.
     title: "72 Hrs With God",
     when: "This weekend",
   },
@@ -49,7 +44,6 @@ export const upcomingEvents = [
   },
 ];
 
-// lib/content.ts
 export const about = {
   heading: "Welcome to CAC Grace & Truth",
   paragraphs: [
@@ -62,3 +56,99 @@ export const giving = {
     "Whoever is generous to the poor lends to the Lord, and he will repay him for his deed.",
   reference: "Proverbs 19:17",
 };
+
+export const ministries = [
+  {
+    name: "Media, I.T & Technical",
+    description:
+      "Handles graphics, TV outreach, film editing, and all electronic and print media for the church.",
+    whoFor: "Anyone with skills or interest in media, design, or production.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_77d716bf33824d4fb4cddc0d4676e1f7~mv2.jpg",
+  },
+  {
+    name: "Choir Ministry",
+    description:
+      "Leads the congregation in praise and worship, ministering through music and song in every service.",
+    whoFor: "Singers and musicians who want to serve through worship.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_fea8eb1c85844a19855c5f0c9a3e0a8c~mv2.jpg",
+  },
+  {
+    name: "Protocol",
+    description:
+      "Manages the church entrance and welcomes visiting ministers, VIPs, and guests, coordinating logistics for special programs.",
+    whoFor: "Detail-oriented members comfortable hosting guests.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_661042ccbf614bbe9641684e25bdd00e~mv2.jpg",
+  },
+  {
+    name: "Kid's Ministry",
+    description:
+      "Helps children grow in faith, understand God's Word, and discover their God-given gifts in a fun, Christ-centred environment.",
+    whoFor: "Those with a heart for teaching and caring for children.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_ac9fbf3ec60d4085bba1d0f13316a868~mv2.jpg",
+  },
+  {
+    name: "Hospitality Ministry",
+    description:
+      "Gives worshippers a warm welcome at the door and cares for guests throughout the service.",
+    whoFor: "Warm, welcoming members who enjoy making people feel at home.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_96328dd3bb6343aa8a4890dae5915bac~mv2.jpg",
+  },
+  {
+    name: "Ushering & Support",
+    description:
+      "Directs worshippers to their seats, helps meet practical needs during service, and helps maintain order.",
+    whoFor: "Members who enjoy practical, hands-on serving during services.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_c5153d94fe62412a863d8d8664bb41a0~mv2.jpg",
+  },
+  {
+    name: "Sanctuary Keeper",
+    description:
+      "Keeps the sanctuary, offices, and church grounds clean, orderly, and ready for every service.",
+    whoFor: "Members who take pride in keeping shared spaces in order.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_f61051ad41b2425ebca392557d28a2de~mv2.jpg",
+  },
+  {
+    name: "Evangelism Team",
+    description:
+      "Shares the Gospel through preaching, hospital visits, prayer, outreach events, and follow-up on new converts.",
+    whoFor: "Those passionate about sharing their faith beyond church walls.",
+    image: null, // Not found on the current site — ask the client for a photo.
+  },
+  {
+    name: "Follow Up",
+    description:
+      "Welcomes first-time visitors, keeps them informed and connected, and supports them in prayer and further counselling where needed.",
+    whoFor: "Encouraging members who want to help newcomers feel at home.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_daa80943a442490d935cef2f24be7045~mv2.jpg",
+  },
+  {
+    name: "Security & Car Park Team",
+    description:
+      "Looks after the safety and security of members and guests, including car park coordination during services.",
+    whoFor: "Members who take safety and order seriously.",
+    image: null, // Not found on the current site — ask the client for a photo.
+  },
+  {
+    name: "Crowd Control Unit",
+    description:
+      "Helps coordinate the safe movement of people during services and larger church programmes.",
+    whoFor: "Calm, organised members comfortable directing groups.",
+    image:
+      "https://static.wixstatic.com/media/77b1e2_d87a4ef800fe42b78c75ba6bf14b6b26~mv2.jpg",
+  },
+  {
+    name: "Publication Unit & Medical Team",
+    description:
+      "Handles church publications and public communications, and provides first aid care during services.",
+    whoFor: "Writers/communicators, and anyone with first aid experience.",
+    image: null, // Not found on the current site — ask the client for a photo.
+  },
+];

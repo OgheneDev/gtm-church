@@ -26,14 +26,14 @@ const cards = [
 export default function WhatToExpect() {
   return (
     <section className="bg-(--ink)">
-      <div className="bg-(--ink) max-w-[1180px] mx-auto px-5 md:px-10 py-16">
-        <p className="text-[13px] font-medium text-(--gold) mb-3">
+      <div className="bg-(--ink) max-w-295 mx-auto px-5 md:px-10 py-16">
+        <p className="text-[13px] text-center md:text-start font-medium text-(--gold) mb-3">
           First Time Here?
         </p>
-        <h2 className="font-semibold text-(--paper) text-2xl md:text-[28px] mb-3">
+        <h2 className="font-semibold text-(--paper) text-2xl text-center md:text-start md:text-[28px] mb-3">
           What to Expect
         </h2>
-        <p className="text-[15px] leading-relaxed text-(--paper)/70 mb-10 max-w-[42em]">
+        <p className="text-[15px] text-center md:text-start leading-relaxed text-(--paper)/70 mb-10 max-w-[42em]">
           You don&apos;t need to know exactly what to expect. Come as you are,
           meet our church family, and join us in worship.
         </p>
