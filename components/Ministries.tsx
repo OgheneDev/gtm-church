@@ -6,28 +6,18 @@ import { ArrowRight } from "lucide-react";
 
 const ministries = [
   {
-    name: "Children",
+    name: "Kid's Ministry",
     description: "Helping children grow in faith and understand God's Word.",
   },
   {
-    name: "Youth",
-    description: "Creating a community where young people can grow in Christ.",
+    name: "Hospitality Ministry",
+    description:
+      "Welcomes worshippers at the door and cares for guests during the service.",
   },
   {
-    name: "Women",
-    description: "Fellowship, encouragement and spiritual growth.",
-  },
-  {
-    name: "Men",
-    description: "Building godly men through fellowship and the Word.",
-  },
-  {
-    name: "Young Adults",
-    description: "Helping young adults navigate life and faith together.",
-  },
-  {
-    name: "Prayer",
-    description: "Coming together in faith and seeking God.",
+    name: "Choir Ministry",
+    description:
+      "Leads the congregation in praise and worship through music and song.",
   },
 ];
 
@@ -140,7 +130,7 @@ export default function Ministries() {
           href="/ministries"
           className="group inline-flex items-center gap-2 text-sm font-medium text-(--ink) no-underline border-b border-(--gold) pb-0.5"
         >
-          Explore Our Ministries
+          Explore All Our Ministries
           <ArrowRight
             size={15}
             className="transition-transform duration-150 group-hover:translate-x-0.5"

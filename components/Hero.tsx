@@ -97,9 +97,9 @@ export default function Hero() {
         </div>
 
         {/* Right Column: Service & Location Card */}
-        <div className="hero-settle relative isolate flex flex-col overflow-hidden rounded-xl border border-white/10 bg-(--ink) p-6 text-(--paper) shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] sm:p-8 opacity-0 animate-[hero-settle_0.6s_ease-out_0.15s_forwards] motion-reduce:opacity-100 motion-reduce:animate-none">
+        <div className="hero-settle relative isolate flex flex-col rounded-sm overflow-hidden border border-white/10 bg-(--ink) p-6 text-(--paper) shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)] sm:p-8 opacity-0 animate-[hero-settle_0.6s_ease-out_0.15s_forwards] motion-reduce:opacity-100 motion-reduce:animate-none">
           <div className="relative z-10 flex flex-col gap-6">
-            <span className="text-[17px] font-semibold text-(--gold) [font-family:var(--font-display)] opacity-0 animate-[hero-item-in_0.5s_ease-out_0.3s_forwards] motion-reduce:opacity-100 motion-reduce:animate-none">
+            <span className="text-[17px] md:text-xl font-semibold text-(--gold) [font-family:var(--font-display)] opacity-0 animate-[hero-item-in_0.5s_ease-out_0.3s_forwards] motion-reduce:opacity-100 motion-reduce:animate-none">
               Sunday worship
             </span>
 
@@ -116,7 +116,7 @@ export default function Hero() {
                   <span className="mb-0.5 block text-[13px] font-medium text-(--gold) opacity-90">
                     Service time
                   </span>
-                  <p className="m-0 text-[15px] leading-relaxed">
+                  <p className="m-0 text-sm leading-relaxed">
                     {site.serviceTime}
                   </p>
                 </div>
@@ -134,7 +134,7 @@ export default function Hero() {
                   <span className="mb-0.5 block text-[13px] font-medium text-(--gold) opacity-90">
                     Location
                   </span>
-                  <p className="m-0 text-[15px] leading-relaxed">
+                  <p className="m-0 text-sm leading-relaxed">
                     {site.address.line1}, {site.address.line2}
                   </p>
                 </div>
@@ -147,7 +147,7 @@ export default function Hero() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex w-full items-center justify-center gap-2 rounded-md border border-white/10 bg-white/8 p-3 text-sm text-(--paper) no-underline transition-colors duration-150 hover:border-[color-mix(in_srgb,var(--gold)_40%,transparent)] hover:bg-white/16 opacity-0 animate-[hero-item-in_0.5s_ease-out_0.68s_forwards] motion-reduce:opacity-100 motion-reduce:animate-none"
+              className="group flex w-full items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/8 p-3 text-sm text-(--paper) no-underline transition-colors duration-150 hover:border-[color-mix(in_srgb,var(--gold)_40%,transparent)] hover:bg-white/16 opacity-0 animate-[hero-item-in_0.5s_ease-out_0.68s_forwards] motion-reduce:opacity-100 motion-reduce:animate-none"
             >
               Get directions
               <ExternalLink

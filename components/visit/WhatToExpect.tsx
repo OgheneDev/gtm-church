@@ -26,31 +26,40 @@ const cards = [
 export default function WhatToExpect() {
   return (
     <section className="bg-(--ink)">
-      <div className="bg-(--ink) max-w-295 mx-auto px-5 md:px-10 py-16">
-        <p className="text-[13px] text-center md:text-start font-medium text-(--gold) mb-3">
-          First Time Here?
-        </p>
-        <h2 className="font-semibold text-(--paper) text-2xl text-center md:text-start md:text-[28px] mb-3">
-          What to Expect
-        </h2>
-        <p className="text-[15px] text-center md:text-start leading-relaxed text-(--paper)/70 mb-10 max-w-[42em]">
-          You don&apos;t need to know exactly what to expect. Come as you are,
-          meet our church family, and join us in worship.
-        </p>
+      <div className="max-w-300 mx-auto px-5 md:px-10 py-20 md:py-24">
+        {/* Header Section */}
+        <div className="mb-14 flex flex-col items-center text-center md:items-start md:text-start">
+          <p className="text-[12px] font-bold tracking-wider text-(--gold) mb-3">
+            First Time Here?
+          </p>
+          <h2 className="font-bold text-(--paper) text-3xl md:text-4xl mb-4 tracking-tight">
+            What to Expect
+          </h2>
+          <p className="text-base leading-relaxed text-(--paper)/70 max-w-[42em]">
+            You don&apos;t need to know exactly what to expect. Come as you are,
+            meet our church family, and join us in worship.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {/* Grid Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {cards.map(({ icon: Icon, title, description }) => (
-            <div key={title} className="rounded-lg border border-(--line) p-6">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-(--gold)/10 text-(--gold) mb-4">
-                <Icon size={18} aria-hidden="true" />
+            <article
+              key={title}
+              className="group flex h-full flex-col rounded-2xl border border-(--line) bg-white/5 p-7 md:p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-(--gold)/50 hover:bg-white/10 hover:shadow-xl hover:shadow-(--gold)/5"
+            >
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-(--gold)/10 text-(--gold) mb-6 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3">
+                <Icon size={24} aria-hidden="true" strokeWidth={1.5} />
               </div>
-              <h3 className="font-semibold text-(--paper) text-base mb-2">
+
+              <h3 className="font-semibold text-(--paper) text-lg mb-2.5 transition-colors duration-300 group-hover:text-white">
                 {title}
               </h3>
-              <p className="text-[14px] leading-relaxed text-(--paper)/70">
+
+              <p className="text-[14.5px] leading-relaxed text-(--paper)/70">
                 {description}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

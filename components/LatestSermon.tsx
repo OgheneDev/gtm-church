@@ -2,13 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { Play, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 // Placeholder — swap for the real latest sermon before this goes live.
 const latestSermon = {
   speaker: "Pastor's Full Name",
   title: "Sermon Title Goes Here",
   date: "Sunday, September 7, 2026",
+  youtubeId: "8nSkiUVqKmo",
 };
 
 export default function LatestSermon() {
@@ -55,10 +56,6 @@ export default function LatestSermon() {
           from { opacity: 0; transform: translateY(8px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes ls-play-ring {
-          0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.35); }
-          100% { box-shadow: 0 0 0 14px rgba(255,255,255,0); }
-        }
         @media (prefers-reduced-motion: reduce) {
           * { animation: none !important; }
         }
@@ -75,7 +72,7 @@ export default function LatestSermon() {
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-14 items-center">
-        {/* Video thumbnail */}
+        {/* YouTube video embed */}
         <div
           className={`relative w-full aspect-video rounded-lg md:rounded-xl overflow-hidden bg-(--ink) ${
             inView
@@ -83,28 +80,13 @@ export default function LatestSermon() {
               : "opacity-0"
           } motion-reduce:opacity-100 motion-reduce:animate-none`}
         >
-          <button
-            type="button"
-            aria-label="Play latest sermon"
-            className="group absolute inset-0 flex items-center justify-center"
-          >
-            <span className="relative flex h-16 w-16 items-center justify-center rounded-full bg-(--paper)/95 shadow-lg transition-transform duration-150 group-hover:scale-105">
-              <span
-                aria-hidden="true"
-                className={`absolute inset-0 rounded-full ${
-                  inView
-                    ? "animate-[ls-play-ring_2.4s_ease-out_1s_infinite]"
-                    : ""
-                } motion-reduce:animate-none`}
-              />
-              <Play
-                size={22}
-                className="ml-1 text-(--ink)"
-                fill="currentColor"
-                aria-hidden="true"
-              />
-            </span>
-          </button>
+          <iframe
+            src={`https://www.youtube.com/embed/${latestSermon.youtubeId}`}
+            title={latestSermon.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="absolute inset-0 h-full w-full"
+          />
         </div>
 
         {/* Details */}
